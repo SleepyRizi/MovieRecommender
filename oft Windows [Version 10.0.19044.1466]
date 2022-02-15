@@ -1,0 +1,82 @@
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mindex 39b4053..f6104af 100644[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -1,6 +1,6 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+[31m-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (movies_recommender_system)" project-jdk-type="Python SDK" />[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />[m
+   <component name="PyCharmProfessionalAdvertiser">[m
+     <option name="shown" value="true" />[m
+   </component>[m
+[1mdiff --git a/.idea/movies_recommender_system.iml b/.idea/movies_recommender_system.iml[m
+[1mindex 74d515a..7eb1baf 100644[m
+[1m--- a/.idea/movies_recommender_system.iml[m
+[1m+++ b/.idea/movies_recommender_system.iml[m
+[36m@@ -4,7 +4,7 @@[m
+     <content url="file://$MODULE_DIR$">[m
+       <excludeFolder url="file://$MODULE_DIR$/venv" />[m
+     </content>[m
+[31m-    <orderEntry type="inheritedJdk" />[m
+[32m+[m[32m    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />[m
+     <orderEntry type="sourceFolder" forTests="false" />[m
+   </component>[m
+ </module>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/vcs.xml b/.idea/vcs.xml[m
+[1mindex 830a534..94a25f7 100644[m
+[1m--- a/.idea/vcs.xml[m
+[1m+++ b/.idea/vcs.xml[m
+[36m@@ -1,6 +1,6 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+   <component name="VcsDirectoryMappings">[m
+[31m-    <mapping directory="$PROJECT_DIR$" vcs="" />[m
+[32m+[m[32m    <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/app.py b/app.py[m
+[1mindex e0e4ee1..9979716 100644[m
+[1m--- a/app.py[m
+[1m+++ b/app.py[m
+[36m@@ -12,7 +12,7 @@[m [mdef fetch_poster(movies_id):[m
+ def recommend(movie):[m
+     movie_index = movies[movies['title'] == movie].index[0][m
+     distance = similarity_matrix[movie_index][m
+[31m-    movies_list = sorted(list(enumerate(distance)), reverse=True, key=lambda x: x[1])[1:7][m
+[32m+[m[32m    movies_list = sorted(list(enumerate(distance)), reverse=True, key=lambda x: x[1])[1:12][m
+     recommend_movies = [][m
+     recommend_movies_poster=[][m
+     for i in movies_list:[m
+[36m@@ -34,7 +34,7 @@[m [mselected_movie = st.selectbox([m
+ )[m
+ if st.button("Recommend"):[m
+     name,posters = recommend(selected_movie)[m
+[31m-    col1,col2,col3,col4,col5,col6 = st.columns(6)[m
+[32m+[m[32m    col1,col2,col3,col4,col5,col6,col7,col8,col9,col10 = st.columns(10)[m
+     with col1:[m
+         st.text(name[0])[m
+         st.image(posters[0])[m
+[36m@@ -53,5 +53,19 @@[m [mif st.button("Recommend"):[m
+     with col5:[m
+         st.text(name[5])[m
+         st.image(posters[5])[m
+[31m-[m
+[32m+[m[32m    with col6:[m
+[32m+[m[32m        st.text(name[6])[m
+[32m+[m[32m        st.image(posters[6])[m
+[32m+[m[32m    with col7:[m
+[32m+[m[32m        st.text(name[7])[m
+[32m+[m[32m        st.image(posters[7])[m
+[32m+[m[32m    with col8:[m
+[32m+[m[32m        st.text(name[8])[m
+[32m+[m[32m        st.image(posters[5])[m
+[32m+[m[32m    with col9:[m
+[32m+[m[32m        st.text(name[9])[m
+[32m+[m[32m        st.image(posters[9])[m
+[32m+[m[32m    with col10:[m
+[32m+[m[32m        st.text(name[10])[m
+[32m+[m[32m        st.image(posters[10])[m
+ [m
