@@ -3,7 +3,6 @@ A web application (NLP task); used TMDB’s dataset (via API) and performed feat
 Deployed on Heroku.
 
 
-https://xtern.herokuapp.com/
   
 ![ice_screenshot_20220724-025848](https://user-images.githubusercontent.com/46001327/180624283-33ef26ce-f8d3-419c-a0c1-cfbbb9cbfbac.png)
 
