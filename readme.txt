@@ -4,5 +4,4 @@ Deployed on Heroku.
 
 
   
-![ice_screenshot_20220724-025848](https://user-images.githubusercontent.com/46001327/180624283-33ef26ce-f8d3-419c-a0c1-cfbbb9cbfbac.png)
-
+![xtern](https://user-images.githubusercontent.com/46001327/180624322-ed8f4d4e-58e3-4da9-8a18-294b8056e0b1.jpg)
