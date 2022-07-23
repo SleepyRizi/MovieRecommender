@@ -5,5 +5,5 @@ Deployed on Heroku.
 
 https://xtern.herokuapp.com/
   
-![ice_screenshot_20220724-025848](https://user-images.githubusercontent.com/46001327/180624237-debdf6db-f75a-4628-8078-48477ac73e14.png)
+![ice_screenshot_20220724-025848](https://user-images.githubusercontent.com/46001327/180624283-33ef26ce-f8d3-419c-a0c1-cfbbb9cbfbac.png)
 
